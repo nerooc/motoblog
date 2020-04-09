@@ -22,6 +22,12 @@ export class App {
         name: 'about',
         moduleId: PLATFORM.moduleName('./about'),
         title: 'About Us'
+      },
+      {
+        route: 'post/:slug',
+        name: 'post',
+        moduleId: PLATFORM.moduleName('./post'),
+        title: 'View Post'
       }
     ]);
 
