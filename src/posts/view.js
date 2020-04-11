@@ -7,6 +7,8 @@ import {
   PostService
 } from '../common/services/post-service';
 
+//require('../resources/elements/blog-post');
+
 @inject(PostService)
 export class View {
   constructor(PostService) {
