@@ -61,9 +61,9 @@ export class PostService {
             posts: previews
           });
         } else {
-          resolve({
-            error: 'There was an error retrieving the posts.'
-          });
+          reject(new Error(
+            'There was an error retrieving the posts.'
+          ));
         }
       }, this.delay);
     });
@@ -83,9 +83,9 @@ export class PostService {
             archives: archives.filter((v, i, a) => a.indexOf(v) === i)
           });
         } else {
-          resolve({
-            error: 'There was an error retrieving the archives.'
-          });
+          reject(new Error(
+            'There was an error retrieving the archives.'
+          ));
         }
       }, this.delay);
     });
@@ -103,9 +103,9 @@ export class PostService {
             tags: tags.filter((v, i, a) => a.indexOf(v) === i)
           });
         } else {
-          resolve({
-            error: 'There was an error retrieving the tags.'
-          });
+          reject(new Error(
+            'There was an error retrieving the tags.'
+          ));
         }
       }, this.delay);
     });
@@ -129,9 +129,9 @@ export class PostService {
             slug
           });
         } else {
-          resolve({
-            error: 'You must be logged in to create a post.'
-          });
+          reject(new Error(
+            'You must be logged in to create a post.'
+          ));
         }
       }, this.delay);
     });
@@ -146,9 +146,9 @@ export class PostService {
             post
           });
         } else {
-          resolve({
-            error: 'Post not found.'
-          });
+          reject(new Error(
+            'Post not found.'
+          ));
         }
       }, this.delay);
     });
@@ -158,9 +158,9 @@ export class PostService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (!this.posts) {
-          resolve({
-            error: 'Error finding posts.'
-          });
+          reject(new Error(
+            'Error finding posts.'
+          ));
         } else {
           resolve({
             posts: this.posts.filter(post => post.tags.includes(tag)).sort((a, b) => b.createdAt - a.createdAt)
@@ -175,9 +175,9 @@ export class PostService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (!this.posts) {
-          resolve({
-            error: 'Error finding posts.'
-          });
+          reject(new Error(
+            'Error finding posts.'
+          ));
         } else {
           resolve({
             posts: this.posts.filter(post => {
@@ -206,9 +206,9 @@ export class PostService {
           return x.slug === post.slug && x.author === this.authService.currentUser;
         })
         if (!toUpdate) {
-          resolve({
-            error: 'There was an error updating the post.'
-          });
+          reject(new Error(
+            'There was an error updating the post.'
+          ));
         } else {
           toUpdate = post;
           resolve({
