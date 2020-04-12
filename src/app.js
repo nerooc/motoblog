@@ -8,6 +8,11 @@ import {
 from 'aurelia-framework';
 
 import {
+  EventAggregator
+} from 'aurelia-event-aggregator';
+
+
+import {
   PostService
 } from './common/services/post-service';
 
@@ -19,10 +24,11 @@ import {
 require('bootstrap/dist/css/bootstrap.min.css');
 require('./assets/styles/blog.css');
 
-@inject(AuthService, PostService)
+@inject(EventAggregator, AuthService, PostService)
 export class App {
 
-  constructor(AuthService, PostService) {
+  constructor(EventAggregator, AuthService, PostService) {
+    this.ea = EventAggregator;
     this.postService = PostService;
     this.authService = AuthService;
 
@@ -30,6 +36,9 @@ export class App {
 
   attached() {
     this.currentUser = this.authService.currentUser;
+    this.subscription = this.ea.subscribe('user', user => {
+      this.currentUser = this.authService.currentUser;
+    })
 
     this.postService.allTags().then(data => {
       this.tags = data.tags;
@@ -55,6 +64,13 @@ export class App {
       },
 
       {
+        route: 'login',
+        name: 'login',
+        moduleId: PLATFORM.moduleName('auth/login'),
+        title: 'Log In'
+      },
+
+      {
         route: 'post/:slug',
         name: 'post-view',
         moduleId: PLATFORM.moduleName('posts/view'),
@@ -73,10 +89,23 @@ export class App {
         name: 'archive-view',
         moduleId: PLATFORM.moduleName('posts/archive-view'),
         title: 'View Posts by Archive'
-      }
+      },
+
+
     ]);
+  }
 
+  detached() {
+    this.subscription.dispose();
+  }
 
+  logout() {
+    this.authService.logout().then(data => {
+      console.log(data.success);
+      this.ea.publish('user', null);
+    }).catch(error => {
+      this.error = error.message;
+    })
   }
 
 }
