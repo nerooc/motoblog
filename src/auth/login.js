@@ -1,7 +1,6 @@
 import {
   inject
-}
-from 'aurelia-framework';
+} from 'aurelia-framework';
 
 import {
   EventAggregator

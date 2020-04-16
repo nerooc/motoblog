@@ -10,7 +10,6 @@ import {
   EventAggregator
 } from 'aurelia-event-aggregator';
 
-
 import {
   PostService
 } from '../common/services/post-service';
