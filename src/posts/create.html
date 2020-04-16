@@ -24,8 +24,15 @@
 
     <hr />
 
-    <button type="submit" class="btn btn-danger">Create Post</button>
+    <button type="submit" if.bind="currentUser" class="btn btn-danger">Create Post</button>
 
+    <div if.bind="!currentUser">
+
+      <div class="alert alert-danger">
+        You have to be logged in to be able to create posts!
+      </div>
+
+    </div>
 
   </form>
 </template>
