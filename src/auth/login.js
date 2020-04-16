@@ -23,11 +23,9 @@ export class Login {
     this.authService = AuthService;
   }
 
-
   activate() {
     this.error = null;
   }
-
 
   login() {
     this.error = null;

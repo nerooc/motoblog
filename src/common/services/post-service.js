@@ -18,9 +18,9 @@ export class PostService {
           title: 'Upcoming new BMW models',
           body: 'The program gets busy for BMW in 2020 and 2021, as future model generations and new versions are added to the brand’s portfolio. No matter how attractive the following news is, you must take everything with a grain of salt as the info is not officially confirmed by BMW. The list was compiled based on previous reports, our own sources and some common sense. BMW gears up for 2020 and 2021 model years in the US and Europe with several novelties, an extensive model update and new electrified additions. To sketch out the portrait of the next year, BMW prepares for the official premiere of the pure-electric BMW iX3, the 4 Series Coupe (G22), the 5 Series LCI/6 Series LCI and the M3/M4 duo (G80/G82). For the US, most of the new models will arrive in time for 2021 model year. Also, all diesel variants across the range (apart from the 1 Series and 2 Series), starting with the 20d version, are rumored to feature a 48V electric boost generator for enhanced efficiency. The plug-in hybrid X3 xDrive30e, with its 292 PS (288 hp) combined system output, will arrive State-side dealerships right after the European debut in Spring 2020. The new X5 xDrive45e is scheduled for introduction on the North American market beginning with Summer next year, right in time for the 2021 model year. The new G80 and G82 generations will herald another premiere: the all-wheel-drive sports platform making use of the specially developed M xDrive traction system. Yet to be officially confirmed, the G80 M3 could also be offered in a special edition entitled “M3 Pure“, which is powered by a slightly detuned S58 engine (around 444 hp of peak output). The power is sent exclusively to the rear wheels via a 6-speed manual gearbox. So, it seems year 2020 is already starting to shape up nicely for BMW. What do you think?',
           author: 'Thomas Davon',
-          slug: 'BMW-new-cars',
-          tags: ['BMW', 'carmarket', 'newmodels', 'carindustry'],
-          createdAt: new Date('April 14, 2020').setHours(7, 50)
+          slug: 'bmw-new-cars',
+          tags: ['bmw', 'carmarket', 'newmodels', 'carindustry'],
+          createdAt: new Date('April 14, 2020')
         },
         {
           title: 'Robert Kubica ahead for Alfa Romeo',
@@ -28,7 +28,7 @@ export class PostService {
           author: 'James Galloway',
           slug: 'f1-testing',
           tags: ['f1', 'kubica', 'alfaromeo', 'f1testing'],
-          createdAt: new Date('February 27, 2020').setHours(13, 42)
+          createdAt: new Date('February 27, 2020')
         },
         {
           title: 'Lewis Hamilton wins sixth F1 World Championship',
@@ -36,7 +36,7 @@ export class PostService {
           author: 'Andrew Benson',
           slug: 'hamilton-champion',
           tags: ['f1', 'hamilton', 'championship'],
-          createdAt: new Date('November 3, 2019').setHours(15, 31)
+          createdAt: new Date('November 3, 2019')
         },
         {
           title: 'New Ford Mondeo to launch in 2021',
@@ -44,7 +44,7 @@ export class PostService {
           author: 'Peter Buckfield',
           slug: 'new-mondeo',
           tags: ['ford', 'carmarket', 'newmodels', 'carindustry'],
-          createdAt: new Date('March 11, 2020').setHours(21, 4)
+          createdAt: new Date('March 11, 2020')
         },
         {
           title: 'Azerbaijan Grand Prix postponed as coronavirus outbreak continues',
@@ -52,7 +52,7 @@ export class PostService {
           author: 'Anthony Davidson',
           slug: 'mclaren-speedtail',
           tags: ['f1', 'azerbaijan', 'postponed'],
-          createdAt: new Date('March 23, 2020').setHours(10, 4)
+          createdAt: new Date('March 23, 2020')
         },
 
         {
@@ -61,7 +61,7 @@ export class PostService {
           author: 'Adrian Padeanu',
           slug: 'mclaren-speedtail',
           tags: ['mclaren', 'carmarket', 'newmodels', 'carindustry'],
-          createdAt: new Date('March 17, 2020').setHours(20, 13)
+          createdAt: new Date('March 17, 2020')
         },
       ]
     }

@@ -32,21 +32,18 @@
         </div>
       </header>
 
-
-
-
-      <div class="row mb-2">
+      <div class="row mb-2" style="margin-top: 50px">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary">World</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Featured post</a>
+                <a class="text-dark" href="#">New BMW models </a>
               </h3>
-              <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                additional content.</p>
-              <a href="#">Continue reading</a>
+              <div class="mb-1 text-muted">Apr 14th</div>
+              <p class="card-text mb-auto">The program gets busy for BMW in 2020 and 2021, as future model generations
+                and new versions...</p>
+              <a route-href="route: post-view; params.bind: { slug: 'BMW-new-cars' }">Continue reading</a>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" src="/images/imgBMW.jpg" width="200" height="250"
               alt="Card image cap" style="object-fit: cover;">
@@ -55,14 +52,14 @@
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <strong class="d-inline-block mb-2 text-success">Formula 1</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Post title</a>
+                <a class="text-dark" href="#">Kubica first in testing</a>
               </h3>
-              <div class="mb-1 text-muted">Nov 11</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                additional content.</p>
-              <a href="#">Continue reading</a>
+              <div class="mb-1 text-muted">Feb 27th</div>
+              <p class="card-text mb-auto">Alfa Romeo show speed as F1s second and final winter test begins but
+                Verstappen shows...</p>
+              <a route-href="route: post-view; params.bind: { slug: 'f1-testing' }">Continue reading</a>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" src="/images/imgF1.jpg" width="200" height="250"
               alt="Card image cap" style="object-fit: cover;">
@@ -74,7 +71,7 @@
         <div class="row">
           <div class="col-md-8 blog-main">
             <h3 class="pb-3 mb-4 font-italic border-bottom">
-              From the Firehose
+              News
             </h3>
 
             <router-view></router-view>
@@ -108,10 +105,11 @@
                 </li>
               </ol>
             </div>
+
             <div class="p-3">
               <h4 class="font-italic">Elsewhere</h4>
               <ol class="list-unstyled">
-                <li><a href="#">GitHub</a></li>
+                <li><a href="https://github.com/nerooc">GitHub</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">Facebook</a></li>
               </ol>
@@ -123,7 +121,7 @@
       </main><!-- /.container -->
 
       <footer class="blog-footer">
-        <a href="#" class="btn btn-outline-danger">Back to top</a>
+        <a href="#" class="btn btn-danger">Remember to subscribe to get fresh news daily!</a>
         </p>
       </footer>
 </template>
