@@ -1,5 +1,7 @@
 <template>
   <require from="../resources/elements/post-list.html"></require>
+  <a class="btn btn-danger btn-lg btn-block" if.bind="currentUser" route-href="create-post">NEW
+    POST</a>
   <post-list error.bind="error" posts.bind="posts">
     Viewing all posts
   </post-list>

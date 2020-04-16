@@ -78,6 +78,13 @@ export class App {
       },
 
       {
+        route: 'create-post',
+        name: 'create-post',
+        moduleId: PLATFORM.moduleName('posts/create'),
+        title: 'Create Post'
+      },
+
+      {
         route: 'post/:slug',
         name: 'post-view',
         moduleId: PLATFORM.moduleName('posts/view'),
