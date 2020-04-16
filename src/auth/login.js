@@ -9,8 +9,7 @@ import {
 
 import {
   Router
-}
-from 'aurelia-router';
+} from 'aurelia-router';
 
 import {
   AuthService
