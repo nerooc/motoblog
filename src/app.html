@@ -19,14 +19,16 @@
                 <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
               </svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" style="margin-right: 10px" if.bind="!currentUser"
+            <a class="btn btn-sm btn-outline-danger" style="margin-right: 10px" if.bind="!currentUser"
               route-href="login">Log In</a>
-            <a class="btn btn-sm btn-outline-secondary" style="margin-right: 10px" if.bind="currentUser" href="#"
-              click.delegate="logout()">Log
-              Out</a>
-            <a class="btn btn-sm btn-outline-secondary" style="margin-right: 10px" if.bind="!currentUser"
+
+            <a class="btn btn-sm btn-outline-danger" style="margin-right: 10px" if.bind="!currentUser"
               route-href="signup">Sign
               up</a>
+
+            <a class="btn btn-sm btn-outline-danger" style="margin-right: 10px" if.bind="currentUser" href="#"
+              click.delegate="logout()">Log
+              Out</a>
 
           </div>
         </div>
