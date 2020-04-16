@@ -70,9 +70,7 @@
       <main role="main" class="container">
         <div class="row">
           <div class="col-md-8 blog-main">
-            <h3 class="pb-3 mb-4 font-italic border-bottom">
-              News
-            </h3>
+
 
             <router-view></router-view>
 
@@ -94,6 +92,9 @@
                 <span class="badge badge-pill badge-danger">${ tag }</span>
               </a>
             </div>
+
+            <a class="btn btn-danger btn-lg btn-block" if.bind="currentUser" route-href="create-post"> &#10133; NEW
+              POST</a>
 
             <div class="p-3">
               <h4 class="font-italic">Archives</h4>

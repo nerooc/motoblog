@@ -1,8 +1,15 @@
 <template>
   <h1>Sign Up</h1>
   <form submit.delegate="signup()">
-    <input type="text" style="margin-top: 30px; margin-bottom: 30px;" placeholder="Name" value.bind="name" />
-    <button type="submit">Sign Up</button>
+    <div class="form-group">
+
+      <input type="text" class="form-control" id="exampleInputEmail1" style="margin-top: 40px;"
+        aria-describedby="emailHelp" placeholder="Your Name" value.bind="name" />
+      <small id="emailHelp" class="form-text text-muted">We'll never share your credentials
+        with anyone else.</small>
+    </div>
+
+    <button class="btn btn-danger" style="margin-top: 20px; margin-bottom: 150px;" type="submit">Sign up</button>
 
     <div class="alert alert-danger" if.bind="error">
       ${ error }
