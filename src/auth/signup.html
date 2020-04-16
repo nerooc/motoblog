@@ -1,0 +1,12 @@
+<template>
+  <h1>Sign Up</h1>
+  <form submit.delegate="signup()">
+    <input type="text" style="margin-top: 30px; margin-bottom: 30px;" placeholder="Name" value.bind="name" />
+    <button type="submit">Sign Up</button>
+
+    <div class="alert alert-danger" if.bind="error">
+      ${ error }
+    </div>
+
+  </form>
+</template>

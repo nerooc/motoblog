@@ -71,6 +71,13 @@ export class App {
       },
 
       {
+        route: 'signup',
+        name: 'signup',
+        moduleId: PLATFORM.moduleName('auth/signup'),
+        title: 'Sign Up'
+      },
+
+      {
         route: 'post/:slug',
         name: 'post-view',
         moduleId: PLATFORM.moduleName('posts/view'),
