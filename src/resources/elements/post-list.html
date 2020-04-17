@@ -14,10 +14,9 @@
   </div>
 
   <div repeat.for="post of posts">
-
     <blog-post post.bind="post"></blog-post>
-
     <a route-href="route: post-view; params.bind: { slug: post.slug }">View Post &raquo;</a>
     <hr />
   </div>
+
 </template>

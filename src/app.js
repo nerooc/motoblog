@@ -4,8 +4,7 @@ import {
 
 import {
   inject
-}
-from 'aurelia-framework';
+} from 'aurelia-framework';
 
 import {
   EventAggregator
@@ -36,11 +35,13 @@ export class App {
 
   attached() {
     this.currentUser = this.authService.currentUser;
+
     this.subscription = this.ea.subscribe('user', user => {
       this.currentUser = this.authService.currentUser;
     })
 
     this.updateSidebar();
+
     this.postSubscription = this.ea.subscribe('post-updated', updatedAt => {
       this.updateSidebar();
     })
