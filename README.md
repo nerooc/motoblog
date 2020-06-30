@@ -1,7 +1,7 @@
 # `Aurelia.js - Proof of Concept`
 ------
 
-The project is a simple automotive blog/news site, partly based on a bootstrap template that I modified and enhanced to meet the necessary conditions.
+The project is a simple automotive blog/news site created with Aurelia.js framework, partly based on a bootstrap template that I modified and enhanced to meet the necessary conditions.
 
 Created for "Web Application Technologies" conducted by Marek Konieczny at AGH UST. ​ 
 
