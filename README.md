@@ -1,5 +1,4 @@
 # `Aurelia.js - Proof of Concept`
-------
 
 The project is a simple automotive blog/news site created with Aurelia.js framework, partly based on a bootstrap template that I modified and enhanced to meet the necessary conditions.
 
@@ -11,9 +10,6 @@ Created for "Web Application Technologies" conducted by Marek Konieczny at AGH U
 Outside of the project scaffolding, it is built mostly with aurelia components that I explained thoroughly during my [presentation](https://github.com/nerooc/Aurelia.js-PoC/tree/master/Presentation). It also contains a simple javascript code made with promises, simulating the work that should be done by the back-end. It holds the entry posts, allows us to use specific functions to operate on them and supports a basic authorisation protocol. Because of the fact that back-end is faked, the site is not persistent and won't save any information after refresh. I may refactor the code to use localStorage in the future, so the functionality gets a bit better.​
 
 
-
-
-------
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
 
 For more information, go to https://aurelia.io/docs/cli/webpack
