@@ -1,4 +1,13 @@
-# `Aurelia.js - Proof of Concept`
+# `MotoBlog - Aurelia.js proof of concept`
+
+## Tech stack
+- HTML
+- CSS
+- JS
+- Aurelia.js framework
+- MVVM architecture
+- Event Aggregator
+- Routing
 
 The project is a simple automotive blog/news site created with Aurelia.js framework, partly based on a bootstrap template that I modified and enhanced to meet the necessary conditions.
 
