@@ -1,5 +1,7 @@
 # `MotoBlog - Aurelia.js proof of concept`
 
+### [OPEN DEMO]()
+
 ## Tech stack
 - HTML
 - CSS
